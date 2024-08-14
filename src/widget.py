@@ -12,5 +12,6 @@ def mask_account_card(user_input: str) -> str:
         user_input_for_mask[-1] = masked_number
     return " ".join(user_input_for_mask)
 
+
 print(mask_account_card("Счет 73654108430135874305"))
 print(mask_account_card("Visa Platinum 8990922113665229"))
