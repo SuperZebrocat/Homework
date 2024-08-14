@@ -11,3 +11,9 @@ def mask_account_card(user_input: str) -> str:
         masked_number = get_mask_account(user_input_for_mask[-1])
         user_input_for_mask[-1] = masked_number
     return " ".join(user_input_for_mask)
+
+
+def get_date(user_date: str) -> str:
+    """Фуyкция для вывода даты в формате 'ДД.ММ.ГГГГ'"""
+    date_for_format = user_date[0:10].split("-")
+    return ".".join(date_for_format[::-1])
