@@ -2,11 +2,11 @@ from operator import itemgetter
 from typing import Dict, List
 
 
-def filter_by_state(operation_info_list: List[Dict], state: str = "executed") -> List:
+def filter_by_state(operation_info_list: List[Dict], state: str = "EXECUTED") -> List[Dict]:
     """Функция для фильтрации операций по состоянию"""
     filtered_list = []
     for operation in operation_info_list:
-        if operation["state"].lower() == state:
+        if operation["state"] == state:
             filtered_list.append(operation)
     return filtered_list
 
