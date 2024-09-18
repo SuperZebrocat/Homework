@@ -7,11 +7,7 @@ from src.masks import get_mask_account, get_mask_card_number
 
 @pytest.mark.parametrize(
     "value, expected",
-    [
-        ("7000792289606361", "7000 79** **** 6361"),
-        ("", None),
-        ("700079228960", None),
-    ],
+    [("7000792289606361", "7000 79** **** 6361"), ("", None), ("700079228960", None)],
 )
 def test_get_mask_card_number(value: str, expected: Any) -> Any:
     """Функция тестирования для функции get_mask_card_number"""
