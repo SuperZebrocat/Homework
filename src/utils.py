@@ -1,7 +1,7 @@
 import json
 import logging
 import os
-from typing import Any, List
+from typing import Any
 
 PATH_FILE = os.path.abspath("../data/operations.json")
 
