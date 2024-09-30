@@ -1,5 +1,6 @@
-from src.searching import group_by_description, filter_by_currency_csv_and_xlsx, count_by_category
 import pytest
+
+from src.searching import count_by_category, filter_by_currency_csv_and_xlsx, group_by_description
 
 
 @pytest.mark.parametrize(
@@ -48,7 +49,7 @@ def test_group_by_description(transactions: list[dict], user_input: str, expecte
         ("RUB", [{"id": 4234093.0, "state": "EXECUTED", "currency_code": "RUB"}]),
     ],
 )
-def test_filter_by_currency_csv_and_xlsx(transactions_csv_xlsx, currency: str, expected):
+def test_filter_by_currency_csv_xlsx(transactions_csv_xlsx: list[dict], currency: str, expected: list[dict]) -> None:
     assert list(filter_by_currency_csv_and_xlsx(transactions_csv_xlsx, currency)) == expected
 
 
