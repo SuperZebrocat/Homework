@@ -72,3 +72,15 @@ def transactions() -> List:
             "to": "Счет 14211924144426031657",
         },
     ]
+
+
+@pytest.fixture
+def transactions_csv_xlsx() -> List:
+    return [
+        {"id": 3176764.0, "state": "CANCELED", "currency_code": "EUR"},
+        {"id": 4234093.0, "state": "EXECUTED", "currency_code": "RUB"},
+        {"id": 3107343.0, "state": "EXECUTED", "currency_code": "SEK"},
+        {"id": 2130098.0, "state": "PENDING", "currency_code": "EUR"},
+        {"id": 4653427.0, "state": "PENDING", "currency_code": "CNY"},
+        {"id": 4641894.0, "state": "EXECUTED", "currency_code": "SEK"},
+    ]
