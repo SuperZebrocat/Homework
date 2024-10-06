@@ -80,7 +80,7 @@ def while_true_sort_reverse(operation_list: list[dict]) -> list[dict]:
 
 def while_true_sort_by_date(operation_list: list[dict]) -> list[dict]:
     """Функция предоставляет пользователю выбор, должны ли транзакции быть осортированы по дате, возвращает список
-     операций в соответствии с выбором"""
+    операций в соответствии с выбором"""
     sorted_list = []
     while True:
         user_input_sort_by_date = input("Отсортировать операции по дате? Да/Нет\n")
@@ -98,7 +98,7 @@ def while_true_sort_by_date(operation_list: list[dict]) -> list[dict]:
 
 def while_true_currency(operation_list: list[dict], user_choice: str) -> list[dict]:
     """Функция позволяет пользователю выбрать, следует ли отфильтровать транзакции по валюте. Возращает соответствующий
-     выбору список операций"""
+    выбору список операций"""
     filtered_list_by_currency = []
     # user_choice_greeting = while_true_greeting()
     while True:
