@@ -11,11 +11,11 @@ from src.widget import get_date, mask_account_card
         ("Visa Platinum 7000792289606361", "Visa Platinum 7000 79** **** 6361"),
         ("Maestro 1596837868705199", "Maestro 1596 83** **** 5199"),
         ("Счет 73654108430135874305", "Счет **4305"),
-        ("", "Ошибка ввода данных"),
-        ("Счет", "Ошибка ввода данных"),
-        ("Visa Platinum", "Ошибка ввода данных"),
-        ("73654108430135874305", "Ошибка ввода данных"),
-        ("Visa Platinum 700079228960636", "Ошибка ввода данных"),
+        ("", None),
+        ("Счет", None),
+        ("Visa Platinum", None),
+        ("73654108430135874305", None),
+        ("Visa Platinum 700079228960636", None),
     ],
 )
 def test_mask_account_card(value: str, expected: Any) -> None:

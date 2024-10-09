@@ -6,7 +6,7 @@ def filter_by_state(operation_info_list: List[Dict], state: str = "EXECUTED") ->
     """Функция для фильтрации операций по состоянию"""
     filtered_list = []
     for operation in operation_info_list:
-        if operation["state"] == state:
+        if operation.get("state") == state:
             filtered_list.append(operation)
     return filtered_list
 

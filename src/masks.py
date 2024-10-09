@@ -1,6 +1,6 @@
 import logging
-from typing import Any
 import os
+from typing import Any
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 rel_file_path = os.path.join(current_dir, "../logs/masks.log")
